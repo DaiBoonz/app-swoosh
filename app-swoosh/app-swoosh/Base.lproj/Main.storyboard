@@ -137,6 +137,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Mens">
                                             <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="Ofl-Gb-nky" eventType="touchUpInside" id="UbF-Zc-5Xx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-nC-GVO" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="382" height="58"/>
@@ -149,6 +152,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Womens">
                                             <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="Ofl-Gb-nky" eventType="touchUpInside" id="m00-R3-JvP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-Zm-COH" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="180" width="382" height="58"/>
@@ -161,10 +167,13 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Co-ed">
                                             <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="Ofl-Gb-nky" eventType="touchUpInside" id="apR-5x-xdl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnK-PE-lpa" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnK-PE-lpa" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="804" width="382" height="58"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.41843833670000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -214,6 +223,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TGd-jj-tjG"/>
                     <connections>
+                        <outlet property="NextBtn" destination="tnK-PE-lpa" id="rFt-1W-lwP"/>
                         <segue destination="RzZ-zH-Ozz" kind="presentation" identifier="SkillVCSegue" modalPresentationStyle="fullScreen" id="YOd-tk-58F"/>
                     </connections>
                 </viewController>
