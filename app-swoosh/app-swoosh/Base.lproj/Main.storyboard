@@ -89,10 +89,6 @@
                             <constraint firstItem="ZEO-Un-Obh" firstAttribute="top" secondItem="AvO-9i-NfD" secondAttribute="bottom" constant="85" id="vhs-22-W6o"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgimg" destination="dBZ-ba-8Wf" id="ZnG-je-sXh"/>
-                        <outlet property="swoosh" destination="AvO-9i-NfD" id="n8p-Jm-xiy"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
