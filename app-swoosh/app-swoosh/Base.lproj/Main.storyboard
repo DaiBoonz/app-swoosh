@@ -176,7 +176,7 @@
                                     <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="RzZ-zH-Ozz" kind="presentation" modalPresentationStyle="fullScreen" id="JKV-v7-S47"/>
+                                    <action selector="onNextTapped:" destination="Ofl-Gb-nky" eventType="touchUpInside" id="hkV-gu-gvd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Am-p6-93o">
@@ -213,11 +213,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TGd-jj-tjG"/>
+                    <connections>
+                        <segue destination="RzZ-zH-Ozz" kind="presentation" identifier="SkillVCSegue" modalPresentationStyle="fullScreen" id="YOd-tk-58F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNZ-NN-fde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="8cD-Ag-MMT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="311.59420289855075" y="62.771739130434788"/>
+            <point key="canvasLocation" x="311.59420289855075" y="62.276785714285708"/>
         </scene>
         <!--ViewControllerC-->
         <scene sceneID="GGY-aU-SaS">
@@ -302,7 +305,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="backButton"/>
                                 <connections>
-                                    <segue destination="6q4-Za-zx9" kind="unwind" unwindAction="unwindFromSkillVC1WithUnwindseuge1:" id="Ugb-zi-evK"/>
+                                    <segue destination="6q4-Za-zx9" kind="unwind" unwindAction="unwindFromSkillVC1WithUnwindseuge1:" id="oIw-Pv-20m"/>
                                 </connections>
                             </button>
                         </subviews>
