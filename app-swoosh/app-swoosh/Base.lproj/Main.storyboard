@@ -11,7 +11,7 @@
         <!--ViewControllerA-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="ViewControllerA" id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ViewControllerA" id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,7 +101,7 @@
         <!--ViewControllerB-->
         <scene sceneID="6wl-8d-2em">
             <objects>
-                <viewController title="ViewControllerB" id="Ofl-Gb-nky" sceneMemberID="viewController">
+                <viewController title="ViewControllerB" id="Ofl-Gb-nky" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bqi-ma-gvT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +226,7 @@
         <!--ViewControllerC-->
         <scene sceneID="GGY-aU-SaS">
             <objects>
-                <viewController title="ViewControllerC" id="RzZ-zH-Ozz" sceneMemberID="viewController">
+                <viewController title="ViewControllerC" id="RzZ-zH-Ozz" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Lg-Z5-pab">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,7 +306,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="backButton"/>
                                 <connections>
-                                    <segue destination="6q4-Za-zx9" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindseuge:" id="EdL-v6-tet"/>
+                                    <segue destination="6q4-Za-zx9" kind="unwind" unwindAction="unwindFromSkillVC1WithUnwindseuge1:" id="Ugb-zi-evK"/>
                                 </connections>
                             </button>
                         </subviews>
